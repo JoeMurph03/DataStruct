@@ -15,13 +15,10 @@ int main() {
         9641, 1666, 1118, 2891, 6847, 6926, 2852, 6127, 4653, 1558
     };
   
-  printf("Array before qSort\n");
-  displayArray(temp, 100);
-
+  displayArray(temp, 100, "Array before qSort");
   quickSort(temp, 0, 99);
 
-  printf("Array after qSort\n");
-  displayArray(temp, 100);
+  displayArray(temp, 100, "Array after qSort");
 
   int elements = sizeof(temp) / sizeof(temp[0]);
 
@@ -42,8 +39,7 @@ int main() {
   } 
 
   quickSortReverse(temp, 0, 99);
-  printf("Array after qSort Reverse\n");
-  displayArray(temp, 100);
+  displayArray(temp, 100, "Array after qSort Reverse");
 
   return 0;
 }
